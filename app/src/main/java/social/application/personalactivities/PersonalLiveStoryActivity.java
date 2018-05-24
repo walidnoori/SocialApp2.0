@@ -36,6 +36,8 @@ import java.util.Locale;
 
 import social.application.R;
 
+import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_VIDEO;
 
@@ -52,6 +54,12 @@ public class PersonalLiveStoryActivity extends AppCompatActivity implements View
     // Create a storage reference from our app
     private StorageReference storageRef = storage.getReference();
 
+    public static final int REQUEST_EXTERNAL_PERMISSION_CODE = 123;
+    public static final String[] PERMISSIONS_EXTERNAL_STORAGE = {
+            READ_EXTERNAL_STORAGE,
+            WRITE_EXTERNAL_STORAGE
+    };
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +75,8 @@ public class PersonalLiveStoryActivity extends AppCompatActivity implements View
         mPictureButton.setOnClickListener(this);
         mImageView.setVisibility(View.GONE);
         mVideoView.setVisibility(View.GONE);
+
+        verifyStoragePermissions(PersonalLiveStoryActivity.this);
 
     }
 
@@ -94,7 +104,7 @@ public class PersonalLiveStoryActivity extends AppCompatActivity implements View
             mImageView.setVisibility(View.GONE);
             mVideoView.setVisibility(View.VISIBLE);
             Uri videoUri = Uri.fromFile(getFile());
-            //uploadVideo(videoUri);
+            uploadVideo(videoUri);
             mVideoView.setVideoURI(videoUri);
             mVideoView.start();
         }else if(requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK){
@@ -170,6 +180,27 @@ public class PersonalLiveStoryActivity extends AppCompatActivity implements View
             dispatchTakeVideoIntent();
         }else if(i == R.id.cameraButton){
             dispatchTakePictureIntent();
+        }
+    }
+
+    /**
+     * Checks if the app has permission to write to device storage
+     *
+     * If the app does not has permission then the user will be prompted to grant permissions
+     *
+     * @param activity
+     */
+    public static void verifyStoragePermissions(Activity activity) {
+        // Check if we have write permission
+        int permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            // We don't have permission so prompt the user
+            ActivityCompat.requestPermissions(
+                    activity,
+                    PERMISSIONS_EXTERNAL_STORAGE,
+                    REQUEST_EXTERNAL_PERMISSION_CODE
+            );
         }
     }
 }
