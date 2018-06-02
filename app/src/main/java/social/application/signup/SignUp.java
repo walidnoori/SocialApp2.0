@@ -27,8 +27,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
 
     private FirebaseAuth mAuth;
     private EditText emailTxt, pwdTxt;
-    private Button signupBtn;
-    private TextView loginText;
+    private TextView signupBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         //email and pass word fields
         emailTxt = (EditText) findViewById(R.id.emailTxt);
         pwdTxt = (EditText) findViewById(R.id.pwdTxt);
-        loginText = (TextView) findViewById(R.id.loginText);
+        TextView loginText = (TextView) findViewById(R.id.loginText);
 
         //sign up button
         findViewById(R.id.signupBtn).setOnClickListener(this);

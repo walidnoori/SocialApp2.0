@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/signup4"
+    android:background="@drawable/lan"
     tools:context="social.application.login.Login">
 
 
@@ -17,10 +17,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="72dp"
         android:fontFamily="@font/joti_one"
-        android:text="Hype!me"
+        android:text="@string/Hype"
         android:textAlignment="center"
         android:textColor="#fff"
-        android:textSize="50dp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/emailText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
-    <Button
+    <TextView
         android:id="@+id/loginbtn"
         android:layout_width="109dp"
         android:layout_height="wrap_content"
@@ -76,8 +76,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/signup_button_design_n2"
+        android:gravity="center"
+        android:textSize="26sp"
         android:text="@string/login"
+        android:fontFamily="@font/joti_one"
         android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,14 +91,18 @@
 
     <Button
         android:id="@+id/googleBtn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/path2"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/goblin_one"
         android:gravity="center"
+        android:text="@string/g"
+        android:textColor="#fff"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

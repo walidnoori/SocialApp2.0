@@ -1,4 +1,4 @@
-#Fri May 25 01:18:45 CEST 2018
-base.0=C\:\\Users\\blarn\\Documents\\andriodStudioProjects\\SocialApp2.0\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Sat Jun 02 13:06:48 CEST 2018
+base.0=D\:\\SocialApp\\SocialApp2.0\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

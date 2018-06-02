@@ -1,36 +1,45 @@
 package social.application.personalactivities;
 
+import android.net.Uri;
+
+import java.net.URL;
+
 public class Upload {
     private String mName;
-    private String mImageUri;
+    private String mImageUrl;
 
     public Upload (){
       // empty constructor needed
     }
 
 
-    public Upload (String name, String imageUri){
+    public Upload (String name, String imageUrl){
         if(name.trim().equals("")){
             name = "No Name";
         }
 
         mName = name;
-        mImageUri = imageUri;
+        mImageUrl = imageUrl;
     }
 
-    public String getName() {
+    public String getName (){
         return mName;
     }
 
-    public void setName(String name) {
-        mName = name;
+    public void setName (String name){
+        mName =name;
+
     }
 
-    public String getImageUri (){
-        return mImageUri;
+    public String getImageUrl (){
+        return mImageUrl;
     }
 
-    public void setImageUri (String imageUri){
-        mImageUri = imageUri;
+    public void setImageUrl(String imageUrl){
+        mImageUrl = imageUrl;
     }
+
+
+
+
 }

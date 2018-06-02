@@ -25,6 +25,10 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
+            android:name=".dm.Message_content"
+            android:label="MessageContent"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".events.EventsActivity"
             android:label="@string/title_activity_events"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
@@ -78,7 +82,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".ImagesActivity"></activity>
+        <activity android:name=".profile.infiniteView" />
+        <activity android:name=".mainpage.Secondary"></activity>
     </application>
 
 </manifest>

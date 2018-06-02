@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +51,10 @@ public class MainPageFragment extends Fragment {
         followingBtn = (ImageButton) rootView.findViewById(R.id.follows_btn);
         personalActivitiesBtn = (TextView) rootView.findViewById(R.id.personal_actions_btn);
         initBtnOnClickListeners();
+
+
+
+
     }
 
     public void initBtnOnClickListeners() {

@@ -15,9 +15,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
             android:gravity="center">
+
             <ImageButton
-                android:id="@+id/navigate_from_profile_to_main_btn"
+                android:id="@+id/navigate_from_message_to_main_btn"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:padding="6dp"
@@ -33,6 +35,7 @@
                 android:textSize="24sp"
                 android:fontFamily="sans-serif"
                 android:text="Willian henry"
+                android:textColor="#fff"
                 android:layout_marginStart="60dp"
                 />
 

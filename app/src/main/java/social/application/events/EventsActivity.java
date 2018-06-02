@@ -52,7 +52,7 @@ public class EventsActivity extends AppCompatActivity {
         eventImage07 = (ImageView) findViewById(R.id.event_img_07);
         eventImage08 = (ImageView) findViewById(R.id.event_img_08);
 
-        int roundInPixel = 100;
+        int roundInPixel = 500;
 
         eventImage01.setImageDrawable( new BitmapDrawable(getResources(), getRoundedCornerBitmap( ((BitmapDrawable)eventImage01.getDrawable()).getBitmap(), roundInPixel )));
         eventImage02.setImageDrawable( new BitmapDrawable(getResources(), getRoundedCornerBitmap( ((BitmapDrawable)eventImage02.getDrawable()).getBitmap(), roundInPixel )));

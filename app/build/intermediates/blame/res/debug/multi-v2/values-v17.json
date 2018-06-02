@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\blarn\\Documents\\andriodStudioProjects\\SocialApp2.0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "D:\\SocialApp\\SocialApp2.0\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\blarn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2b9ec16858a88ad415efcc652c5a6fc4\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\Walid Noori\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\34f760653e014812e8f1a8c5dc6d58d9\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
